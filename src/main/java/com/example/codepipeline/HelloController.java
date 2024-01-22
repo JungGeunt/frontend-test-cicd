@@ -6,14 +6,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
-
     @GetMapping("/sayHello/{name}")
-    public String sayHello(@PathVariable String name){
-        return  "Hello" +name;
+    public String sayHello(@PathVariable String name) {
+        return "Hello " + name;
     }
 
-    @GetMapping("/}")
-    public String root(){
-        return  "HI This Page Before Modifiyed";
+    @GetMapping("/")
+    public String root() {
+        return "Hi This Page Before Modifiyed";
     }
 }
